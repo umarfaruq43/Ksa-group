@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Police Page</title>
+    <link rel="stylesheet" href="ksa.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <div class="head">
+          <h3>KSA</h3>
+        </div>
+      </header>
+
+      <div class="content">
+        <div class="button">
+          <h3>
+            Report a crime
+          </h3>
+          <div class="btn">
+            <a href="#"> Police </a>
+          </div>
+          <form class="pre-content">
+            <input type="text" list="pro" placeholder="Select a crime" class="select"   >
+            <datalist id="pro">
+              <option value="Robbery"> </option>
+              <option value=" Riot"> </option>
+              <option value="Rape"> </option>
+            </datalist>
+
+            <p>
+              <input
+                type="text"
+                class="pre-content2"
+                placeholder="Enter your Location"
+              />
+            </p>
+            <div class="media">
+              <input type="file" id="file" class="bat" />
+              <label for="file" id="me"> Choose a file</label>
+              <span id="media"></span>
+            </div>
+
+            <div class="go">
+              <a href="report.html"> REPORT</a>
+              <a href="tel:07010602957"> MAKE A CALL</a>
+            </div>
+          </form>
+        </div>
+      </div>
+      <footer>
+        &copy; Team Charlie
+      </footer>
+    </div>
+    <script>
+      var bat = document.querySelector(".     bat");
+      var media = document.querySelector("#media");
+      bat.addEventListener("change", function() {
+        media.innerHTML = bat.value;
+      });
+    </script>
+  </body>
+</html>
